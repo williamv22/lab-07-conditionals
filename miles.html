@@ -1,0 +1,24 @@
+<html>
+
+         <head>
+
+          <title>Gas Mileage</title>
+
+           <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+
+
+           <script type = "text/javascript">
+            var answer = prompt('How many miles did you drive?')
+            var answer2 = prompt('How many gallons of gas did you use?')
+
+            function calcMPG() {
+              console.log('CALLING CALC');
+              var miles = document.getElementById('miles').value;
+              var gallons = document.getElementById('gallons').value;
+              var mpg = miles / gallons;
+              document.getElementById('milesPerGallon').innerText = mpg;
+            }
+           </script>
+     </head>
+</html>
